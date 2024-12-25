@@ -3,7 +3,8 @@ import './SocialMedia.css'
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
 
-const appName = "AppName";
+
+
 const initialUsers = [];
 const initialProfilePics = [];
 
@@ -29,7 +30,6 @@ function App() {
 
     return (
         <Router>
-                {appName}<sub>😎</sub>
             <nav>
                 <Link to="/">Home</Link> | 
                 {!currentUser && <Link to="/login">Login</Link>} 
